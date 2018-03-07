@@ -11,7 +11,7 @@ if ( isset($_GET['url']) AND strlen($_GET['url']) > 0 )
     $method     = array_shift($url);
     $arguments  = $url; 
 
-    $pathController = __DIR__ .'/controllers/'. $controller . '.php';
+    $pathController = __DIR__ .'/controllers/'. $controller . 'Controller.php';
 
     if( ! isset($method) ) $method = 'index';
     if( $_SERVER['REQUEST_METHOD'] == 'POST' ) $method = 'store';

@@ -2,8 +2,8 @@
 
 function autoload_controllers( $file )
 {
-	if( file_exists( PATH_ROOT .'/controllers/'. strtolower($file) . 'Controller.php') ) {
-		include_once( PATH_ROOT .'/controllers/'. strtolower($file) . 'Controller.php' );
+	if( file_exists( PATH_ROOT .'/controllers/'. ucfirst($file) . '.php') ) {
+		include_once( PATH_ROOT .'/controllers/'. ucfirst($file) . '.php' );
 	}
 }
 spl_autoload_register('autoload_controllers');
@@ -11,8 +11,8 @@ spl_autoload_register('autoload_controllers');
 
 function autoload_models( $file )
 {
-	if( file_exists( PATH_ROOT .'/models/'. strtolower($file) . '.php') ) {
-		include_once( PATH_ROOT .'/models/'. strtolower($file) . '.php' );
+	if( file_exists( PATH_ROOT .'/models/'. ucfirst($file) . '.php') ) {
+		include_once( PATH_ROOT .'/models/'. ucfirst($file) . '.php' );
 	}
 }
 spl_autoload_register('autoload_models');
