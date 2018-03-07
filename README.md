@@ -1,6 +1,9 @@
 # CRUD
 El proyecto esta diseñado con el patron MVC, se utilizaron unos script para gestionar las peticiones al servidor. La estrucura es la sigueinte:
 
+Para acceder al móidulo de Usuarios, ingrese en http://crud.dev/usuarios
+
+Para configurar la conexión con la Base de datos edite los parametros del archivo */core/config.php*
 
 ## Controladores
 */controllers*
